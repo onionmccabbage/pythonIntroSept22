@@ -1,5 +1,5 @@
-Review 1 45 mins then show-and-tell
-========
+Review 1 45 mins then show-and-tell   until 2:10
+======== use documentation, look online, ask me, ask each other...
 Ask the user to enter a guess until they get it right (integer between 0 and 100)
   from random import randint # this is a good way to make a random number
   n = randint(0,100)

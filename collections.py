@@ -29,3 +29,30 @@ for i in evens:
     print(i, end=', ')
 for i in 'this is a string of characters':
     print(i, end='-')
+
+# Non-indexed collections: the dictionary collection is NOT indexed by number (it is mutable)
+d1 = {"name":"Timnit", 'age':42,  'member':True}
+d2 = {'name':'Grace' , 'age':82,  'member':True}
+d3 = {'name':'Ada'   , 'age':142, 'member':False}
+
+# we can access members of a dictionary by the keys
+d1['name'] = 'Gebru'
+print(d1['name'], d3['member'], d2['age'])
+# we can access all keys and all values
+print(d1.keys(), d2.values())
+# we can add to dictionary members
+d1['famous'] = True
+
+# we can access all members of a dict in a loop
+for (k, v) in d1.items():
+    print(k, v) # careful - there is no predictable order to the members
+
+# other creational techniques
+w = dict() # an empty dictionary
+# careful - if we need a one-member tuple, we must include a comma
+z =(7,) # a tuple
+
+# there is also a data-type called 'set' - a colection of non-indexed unique values
+s = {7, 6, 5, 4, 7, 3, 2, 5} # only unique members survive
+s.add(0)
+print(s)
