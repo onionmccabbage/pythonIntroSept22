@@ -33,3 +33,10 @@ print(my_tuple[0])
 # types
 print(type(my_list), type(12.8), type(e), type(222), type(my_tuple[3]))
 # we will look at casting data types and access members of collections
+x = '42' # string
+y = 4.2  # float
+print( float(x) + y ) # 46.2
+# we can receive input from the user
+q = input('Please enter a number ') # we ALWAYS receive a str from input
+q = int(float(q)) # take the int of the float of the str
+print(q, type(q))

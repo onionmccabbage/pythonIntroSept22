@@ -18,6 +18,9 @@ elif q in t: # the 'in' operator checks a value for existance in a collection
 else:
     print('its an odd number')
 
+# other comparison operators
+# ==   <    >    <=    >=    !=  
+
 # the while loop: cautiom - make sure you can break out of it!!!!
 while True:
     print('this will never end')
