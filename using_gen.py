@@ -16,7 +16,9 @@ def main():
     # we can use a loop to yield the next members of our generator
     for item in num_g:
         print(item, end=', ') # keeps looping until the generator is exhausted
-
+    # we can comprehensively deal with each member of a list or tuple
+    odd_t  = (num for num in (range(0, 101)) if num%2 ==1) # this is called tuple comprehension
+    even_l = [num for num in (range(0, 101)) if num%2 ==0] # this is list comprehension
     # we can comprehensively deal with each member of a dictionary
     p = 'are we done yet?'
     chars = {letter:p.count(letter) for letter in p} # this is called dictionary comprehension

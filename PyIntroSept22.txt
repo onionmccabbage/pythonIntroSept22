@@ -40,10 +40,10 @@ Monday
 
 Tuesday
 - quick review of where we got to
-- the recordings...
-- set comprehension, list compresension, dictionary comprehension
-- by-reference or by-value
-- other kinds of Python: cpython is the default - also jython ipython ironpython
+- the recordings... there will be a link...!
+> tuple comprehension, list compresension, dictionary comprehension
+> by-reference or by-value
+> other kinds of Python: cpython is the default - also jython ipython ironpython
 - functions, *args, **kwargs  
 - custom generator and yield
 - to add libraries to python:
