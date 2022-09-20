@@ -26,9 +26,37 @@ def simpleInput(): # read back from a text file
         print(err)
     finally:
         pass
+
+def fileWrite(t='default'):
+    '''this will write chunks of text to an output file'''
+    try:
+        fout   = open('mylog.txt', 'at')
+        size   = len(t)
+        offset = 0
+        chunk  = 24 # I choose to write 24 characters at a time
+        while True:
+            if offset > size:
+                fout.write('\n') #append a new line character
+                break
+            else:
+                fout.write(t[offset:offset+chunk]) # [start:stop-before]
+                offset += chunk
+        fout.close()
+    except FileExistsError as fe:
+        print('The file already exists {}'.format(fe))
+    finally:
+        print('all done')
+
+def fileRead():
+    with open('mylog.txt', 'rt') as fin:
+        retrieved = fin.readlines() # readlines will read the whole thing as a list of lines
+        print(retrieved)
+
 def main():
     simpleOutput()
     simpleInput()
+    fileWrite('this is a long piece of text that will be written in chinks of 24 characters to the log file')
+    fileRead()
 
 if __name__ == '__main__':
     main()
