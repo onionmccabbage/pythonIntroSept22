@@ -14,7 +14,10 @@ def getData():
     results = requests.get(url) # this contains the JSON data
     # convert the results into a dictionary
     result_d = results.json() # convert JSON to dict
-    print(type(result_d), result_d)
+    # print(type(result_d), result_d)
+    return result_d # return the list of dictionaries
 
 if __name__ == '__main__':
-    getData()
+    users = getData() # grab all the data from the end-point
+    # print some parts of the data using print formatting
+    print(users[0]['address']['geo'])
