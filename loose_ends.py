@@ -8,3 +8,18 @@ if value.isnumeric(): # isnumeric is a function
     print('you entered a numeric string')
 else:
     print('not numeric')
+
+# By reference and by value
+a = 9
+b = a # both a and b reference the value 9 (by value - they take the same value)
+print(b)
+b = 8
+print(a) # what is the value of a? It still refers to the memory location containing the integer value 9
+
+# what about complex data types - passed by reference (they refer to the same thing)
+a = [6,5,4]
+b = a # both b and a are identifiers which reference the memory location containing the list
+print(b) # yep they are the same
+b[0] = -6
+print(a[0]) # what is this value?
+
