@@ -1,4 +1,4 @@
-Python Review 2 until 2:30
+Python Review 2 until 2:30 - break until 3:00
 ===============
 Ask the user for a category and also for an id (category can be users, posts, albums, todos or photos)
 You could validate that the category exists, maybe in a separate module that you import

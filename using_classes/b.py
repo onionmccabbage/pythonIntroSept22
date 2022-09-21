@@ -14,3 +14,5 @@ class Coder(Person):
 if __name__ == '__main__':
     timnit = Coder('Timnit', 32, 'timnit@nasa.ie', 'Python')
     print(timnit)
+
+    import this

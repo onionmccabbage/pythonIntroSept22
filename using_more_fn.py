@@ -23,14 +23,18 @@ def makeInt(value): # document your code using '''docstring'''
         return 0 # careful - at the moment this will also return 0 for decimal strings
 
 # exercise the code
-my_int = 3
-my_float = 4.5
-my_str = '6'
-my_list = [8,7,6]
-print(makeInt(my_int))
-print(makeInt(my_float))
-print(makeInt(my_str))
-print(makeInt(my_list))
+# to prevent this immediate code 
+# from running when this module is imported
+# we use the following:
+if __name__ == '__main__':
+    my_int = 3
+    my_float = 4.5
+    my_str = '6'
+    my_list = [8,7,6]
+    print(makeInt(my_int))
+    print(makeInt(my_float))
+    print(makeInt(my_str))
+    print(makeInt(my_list))
 
 
 

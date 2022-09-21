@@ -23,3 +23,18 @@ print(b) # yep they are the same
 b[0] = -6
 print(a[0]) # what is this value?
 
+# how big can python go?
+# bign = 10**1000000
+
+# print(bign)
+
+# global scope and local scope
+g = 'this is in the global scope'
+# we tend to try to avoid putting anything in the global scope
+
+def myFn():
+    global g # this now refers to the 'g' in the global scope
+    g = 'this is in the local scope of a function'
+    print(g)
+myFn()
+print(g)
