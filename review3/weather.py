@@ -33,7 +33,7 @@ class Weather():
         self.temp += tempChange
     def __str__(self):
         # output a nicely formatted weather report
-        report  = 'The weather is {0} at {1:.2f}C'.format(self.__desc, self.__temp)
+        report  = 'The weather is {0} (yes {0}) at {1:0.2f}C'.format(self.__desc, self.__temp)
         return report
 
 if __name__ == '__main__':

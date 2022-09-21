@@ -25,6 +25,7 @@ class LocalWeather(Weather): # inherit from our Weather class
             self.__country = new_country
         else:
             self.__country = 'uk' # default
+            
 if __name__ == '__main__':
     l1 = LocalWeather('Edinburgh', 'uk', 'rainy', -3.7)
     l2 = LocalWeather('Galway', 'ie', 'humid', 5)
